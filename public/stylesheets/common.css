@@ -1,0 +1,21 @@
+body{
+    font: 16px "Gotham Rounded A", "Gotham Rounded B", "Gotham Rounded", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #f5f5f5;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(0,0,0,.87);
+    word-wrap: break-word;
+    letter-spacing: 0.3px;
+    line-height: 1.8;
+    margin: 0;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+figure{
+    margin: 0 !important;
+}
+a{
+    color: #007dcc;
+    text-decoration: none;
+}
+

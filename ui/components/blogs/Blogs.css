@@ -1,0 +1,132 @@
+.blog-summary{
+    margin-bottom: 2rem;
+}
+.thumbnail-img, .blog-desc img {
+    width: 672px;
+    height: 372px;
+    cursor: pointer;
+}
+.thumbnail-img:hover, .blog-desc img:hover{
+    opacity: .9;
+}
+.c-list{
+    display: flex;
+    max-width: 672px;
+}
+.c-item{
+    display: block;
+    margin: .75rem 0;
+    margin-right: .5rem;
+    padding: .25rem .5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-left: .25rem solid rgba(0,0,0,.87);
+    cursor: pointer;
+    color: rgba(0,0,0,.87);
+}
+.c-item:hover{
+    color: #888;
+    border-left: .25rem solid #888;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1080px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 0 1rem;
+}
+.main{
+    width: 66%;
+    max-width: 672px;
+    transition: all 0.3s ease-in-out;
+}
+.continue-link{
+    float: right;
+    color: #007dcc;
+    text-decoration: none;
+    margin-bottom: 2rem;
+}
+.sidebar{
+    width: 34%;
+    margin-left: 3rem;
+    max-width: 360px;
+    clear: both;
+    transition: all 0.3s ease-in-out;
+}
+.blog-title{
+    text-transform: uppercase;
+    color: #000;
+}
+.publish-detail{
+    font-size: 12px;
+    color: #767676;
+    text-transform: capitalize;
+    font-weight: 600;
+    display: flex;
+    margin: 1rem 0;
+}
+.blog-author{
+    margin-left: 1rem;
+    text-transform: uppercase;
+}
+.blog-title:hover, .blog-author:hover, .blog-date:hover, .sidebar-items-title{
+    color: #007dcc;
+}
+.older-post{
+    clear: both;
+    float: right;
+    color: #ffffff;
+    font-weight: 600;
+    background: #007dcc;
+    margin-bottom: 2rem;
+    padding: .25rem 2rem;
+    cursor: pointer;
+}
+.older-post:hover{
+    background-color: #03a9f4;
+}
+.related-blog{
+    max-width: 350px;
+}
+.related-blog h6{
+    margin: .5rem 0;
+}
+.related-blog img{
+    max-width: 350px !important;
+    height: auto !important;
+}
+
+@media only screen and (max-width: 1120px) {
+    .main{
+        width: 66%;
+        max-width: 66%;
+    }   
+    .sidebar{
+        width: 34%;
+        max-width: 34%;
+        margin-left: 1rem;
+    } 
+    .thumbnail-img, .blog-desc img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 672px) {
+    .content{
+        display: block;
+        margin: auto;
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+    .main{
+        width: 100%;
+        max-width: 672px;
+    }
+    .sidebar{
+        width: 100%;
+        max-width: 360px;
+        margin: 0;
+    }
+}
